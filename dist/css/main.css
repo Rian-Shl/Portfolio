@@ -333,7 +333,8 @@ img {
 
 #main-footer {
   background: #333;
-  height: 5rem; }
+  height: 5rem;
+  color: #fff; }
   #main-footer a {
     color: #fff; }
   #main-footer .footer-content {

@@ -13,7 +13,7 @@
 
 .btn-main {
   color: #f4f4f4;
-  background-color: #7688aa; }
+  background-color: #efc846; }
 
 .btn-light {
   color: #333;
@@ -26,10 +26,10 @@
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-  background-color: #7688aa; }
+  background-color: #efc846; }
 
 .bg-main {
-  background: #7688aa;
+  background: #efc846;
   color: #000; }
 
 .bg-light {
@@ -78,7 +78,7 @@ input[class^='btn-']:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #7688aa;
+  background: #efc846;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -106,7 +106,9 @@ a {
 ul {
   list-style: none; }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase; }
 
 img {
@@ -136,12 +138,23 @@ img {
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #7688aa; }
+      border-color: #efc846; }
 
 #header-home {
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center 70%/cover;
   height: 100vh;
   color: #fff; }
+  #header-home * {
+    z-index: 10;
+    position: relative; }
+  #header-home::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
   #header-home .header-content {
     text-align: center;
     padding-top: 20%; }
@@ -150,9 +163,9 @@ img {
       line-height: 1.2; }
 
 #header-inner {
-  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/showcase.jpg") no-repeat center 60%/cover;
   height: 5.5rem;
-  border-bottom: 3px solid #7688aa; }
+  border-bottom: 3px solid #efc846; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -160,7 +173,7 @@ img {
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
   #home-a .specials .fas {
-    color: #7688aa;
+    color: #efc846;
     padding-bottom: 0.4rem; }
 
 #home-b .stats {
@@ -190,7 +203,7 @@ img {
     top: 0;
     right: 0;
     font-size: 28px;
-    background: #7688aa;
+    background: #efc846;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -210,7 +223,7 @@ img {
     position: relative;
     transition: all 0.5s; }
     #home-c .process-icon:hover {
-      background: #7688aa;
+      background: #efc846;
       width: 90px;
       height: 90px;
       line-height: 90px;
@@ -221,7 +234,7 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
   gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -229,7 +242,7 @@ img {
 
 #about-a .bio {
   grid-area: bio;
-  border-left: 3px solid #7688aa;
+  border-left: 3px solid #efc846;
   padding: 0.8rem; }
 
 #about-a .award-1 {
@@ -244,7 +257,7 @@ img {
 #about-a .award-1 .fas,
 #about-a .award-2 .fas,
 #about-a .award-3 .fas {
-  color: #7688aa;
+  color: #efc846;
   margin: 1rem; }
 
 #about-b .progress {
@@ -256,7 +269,7 @@ img {
   #about-b .progress div {
     height: 100%;
     color: #fff;
-    background: #7688aa; }
+    background: #efc846; }
 
 #about-c .about-logos {
   display: grid;
@@ -304,4 +317,4 @@ img {
       padding: 0.5rem;
       cursor: pointer; }
       #main-footer .footer-content .social .fab:hover {
-        background: #7688aa; }
+        background: #efc846; }

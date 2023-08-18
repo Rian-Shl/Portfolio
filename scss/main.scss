@@ -1,4 +1,3 @@
-
 @import 'config';
 @import 'utilities';
 
@@ -8,7 +7,7 @@
     margin: 0;
     padding: 0;
 }
-    
+
 body {
     font-family: 'Dosis', sans-serif;
     line-height: 1.6;
@@ -24,7 +23,9 @@ ul {
     list-style: none;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     text-transform: uppercase;
 }
 
@@ -65,6 +66,7 @@ img {
         &:hover {
             border-color: $medium-color;
         }
+
         &.current {
             border-color: $main-color;
         }
@@ -72,11 +74,27 @@ img {
 }
 
 // Header 
-#header{
+#header {
     &-home {
-        background: $bg-image no-repeat center right / cover;
+        background: $bg-image no-repeat center 70% / cover;
         height: 100vh;
         color: #fff;
+
+        * {
+            z-index: 10;
+            position: relative;
+        }
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
         // Header Content
         .header-content {
             text-align: center;
@@ -86,12 +104,18 @@ img {
                 font-size: 4rem;
                 line-height: 1.2;
             }
+
+
         }
 
+
+
+
     }
+
     // Header Inner
     &-inner {
-        background: $bg-image no-repeat 20% 30% / cover;
+        background: $bg-image no-repeat center 60%/ cover;
         height: 5.5rem;
         border-bottom: 3px solid $main-color;
     }
@@ -99,6 +123,7 @@ img {
 
 // Home Sections
 #home {
+
     // Home Section A
     &-a {
         .specials {
@@ -113,12 +138,13 @@ img {
             }
         }
     }
+
     // Home Section B
     &-b {
         .stats {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-    
+
 
             li {
                 line-height: 2;
@@ -136,17 +162,19 @@ img {
             div {
                 padding: 3rem 0;
 
-                &:nth-child(odd){
+                &:nth-child(odd) {
                     background-color: $light-color;
                 }
-                &:nth-child(even){
+
+                &:nth-child(even) {
                     background-color: $medium-color;
                 }
             }
         }
     }
-     // Home Section C
-     &-c {
+
+    // Home Section C
+    &-c {
         .process {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -186,6 +214,7 @@ img {
                     height: 90px;
                     line-height: 90px;
                     color: set-text-color($main-color);
+
                     .process-step {
                         background: $dark-color;
                         color: set-text-color($dark-color);
@@ -198,13 +227,14 @@ img {
 
 // About Sections
 #about {
+
     // About A
     &-a {
         .about-info {
             display: grid;
-            grid-template-areas: 
-            "bioimage bio bio"
-            "aw1 aw2 aw3";
+            grid-template-areas:
+                "bioimage bio bio"
+                "aw1 aw2 aw3";
             gap: 1.2rem;
         }
 
@@ -212,6 +242,7 @@ img {
         .bio-image {
             grid-area: bioimage;
         }
+
         .bio {
             grid-area: bio;
             border-left: 3px solid $main-color;
@@ -221,13 +252,15 @@ img {
         .award-1 {
             grid-area: aw1;
         }
+
         .award-2 {
             grid-area: aw2;
         }
+
         .award-3 {
             grid-area: aw3;
         }
-        
+
         .award-1 .fas,
         .award-2 .fas,
         .award-3 .fas {
@@ -259,30 +292,33 @@ img {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
-            
+
             img {
                 width: 70%;
             }
         }
     }
+
     // About D
     &-d {
         .testimonials {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 0.5rem;
-            
+
             ul {
                 list-style: none;
                 margin-top: 1rem;
                 display: flex;
                 align-items: center;
             }
+
             p {
                 border: 1px solid $medium-color;
                 border-radius: 5px;
                 padding: 0.5rem;
             }
+
             img {
                 width: 50px;
                 height: 50px;

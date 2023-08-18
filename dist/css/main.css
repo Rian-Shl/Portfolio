@@ -115,10 +115,12 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  font-size: 48px;
+  line-height: 48px;
+  font-family: 'Tilt Prism', cursive;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 500; }
 
 #main-nav {
   display: flex;
@@ -134,7 +136,7 @@ img {
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s; }
+    transition: border-color 0.3s; }
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
@@ -166,6 +168,17 @@ img {
   background: url("../img/showcase.jpg") no-repeat center 60%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #efc846; }
+  #header-inner * {
+    z-index: 10;
+    position: relative; }
+  #header-inner::before {
+    content: '';
+    height: 5.5rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -238,7 +251,9 @@ img {
   gap: 1.2rem; }
 
 #about-a .bio-image {
-  grid-area: bioimage; }
+  grid-area: bioimage;
+  background: url("../img/about.jpg") no-repeat center center/cover;
+  height: 20rem; }
 
 #about-a .bio {
   grid-area: bio;
@@ -278,29 +293,49 @@ img {
   #about-c .about-logos img {
     width: 70%; }
 
-#about-d .testimonials {
+#about-d .certificates {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem; }
-  #about-d .testimonials ul {
+  gap: 0.7rem; }
+  #about-d .certificates div {
+    display: grid;
+    grid-template-rows: 4rem 1fr 4rem; }
+  #about-d .certificates h4 {
+    text-transform: none; }
+  #about-d .certificates ul {
     list-style: none;
     margin-top: 1rem;
     display: flex;
     align-items: center; }
-  #about-d .testimonials p {
+    #about-d .certificates ul i {
+      color: #efc846;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+      transition: all 0.2s;
+      border: 2px #efc846 solid; }
+  #about-d .certificates p {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem; }
-  #about-d .testimonials img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 0.5rem; }
+  #about-d .certificates a {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.8rem; }
+    #about-d .certificates a:hover i {
+      background: #333;
+      color: #ccc;
+      border-color: #ccc; }
 
 #main-footer {
   background: #333;
-  color: #fff;
   height: 5rem; }
+  #main-footer a {
+    color: #fff; }
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
@@ -315,6 +350,7 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 0.2s; }
       #main-footer .footer-content .social .fab:hover {
         background: #efc846; }

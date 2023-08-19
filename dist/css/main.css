@@ -253,7 +253,7 @@ img {
 #about-a .bio-image {
   grid-area: bioimage;
   background: url("../img/about.jpg") no-repeat center center/cover;
-  height: 20rem; }
+  min-height: 16rem; }
 
 #about-a .bio {
   grid-area: bio;
@@ -275,16 +275,29 @@ img {
   color: #efc846;
   margin: 1rem; }
 
+#about-b .skills-content {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 1rem;
+  margin-bottom: 2rem; }
+  #about-b .skills-content h4 {
+    margin-bottom: 0.3rem; }
+
 #about-b .progress {
   overflow: hidden;
   height: 20px;
   background-color: #ccc;
-  border-radius: 10px;
-  margin-bottom: 0.6rem; }
+  border-radius: 10px; }
   #about-b .progress div {
     height: 100%;
-    color: #fff;
-    background: #efc846; }
+    color: #333;
+    font-weight: bold;
+    background: #efc846;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 #about-c .about-logos {
   display: grid;

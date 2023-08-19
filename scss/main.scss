@@ -259,7 +259,7 @@ img {
         .bio-image {
             grid-area: bioimage;
             background: $about-image no-repeat center center/ cover;
-            height: 20rem;
+            min-height: 16rem;
 
         }
 
@@ -291,17 +291,34 @@ img {
 
     // About B
     &-b {
+        .skills-content {
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+            row-gap: 1rem;
+            margin-bottom: 2rem;
+
+            h4 {
+                margin-bottom: 0.3rem;
+            }
+        }
+
+
         .progress {
             overflow: hidden;
             height: 20px;
             background-color: $medium-color;
             border-radius: 10px;
-            margin-bottom: 0.6rem;
 
             div {
                 height: 100%;
-                color: #fff;
+                color: $dark-color;
+                font-weight: bold;
                 background: $main-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

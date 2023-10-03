@@ -147,13 +147,17 @@ img {
         .specials {
             margin-top: 3rem;
             display: grid;
-            gap: 1rem;
+            gap: 2rem;
             grid-template-columns: repeat(4, 1fr);
 
             .fas,
             .fa-brands {
                 color: $main-color;
                 padding-bottom: 0.4rem;
+            }
+
+            p {
+                text-align: justify;
             }
         }
     }
@@ -333,9 +337,12 @@ img {
                 }
 
                 p {
+                    text-align: justify;
+
                     a {
                         color: #fff;
                         text-decoration: underline;
+
                     }
                 }
 
@@ -541,6 +548,7 @@ img {
                 border: 1px solid $medium-color;
                 border-radius: 5px;
                 padding: 0.5rem;
+                text-align: justify;
             }
 
             a {

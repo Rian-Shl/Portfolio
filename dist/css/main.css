@@ -231,7 +231,8 @@ img {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
-  #home-a .specials .fas {
+  #home-a .specials .fas,
+  #home-a .specials .fa-brands {
     color: #7288c2;
     padding-bottom: 0.4rem; }
 
@@ -398,12 +399,12 @@ img {
     width: 0;
     height: 0;
     border-style: solid; }
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     #about-timeline ul li div {
       width: 200px; }
     #about-timeline ul li:nth-child(even) div {
       left: -268px; } }
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     #about-timeline ul li {
       margin-left: 20px; }
     #about-timeline ul li div {
@@ -541,3 +542,79 @@ img {
       transition: all 0.2s; }
       #main-footer .footer-content .social .fab:hover {
         background: #7288c2; }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home::before {
+      height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    height: 8rem;
+    border-bottom: 3px solid #7288c2;
+    background-position: center 60%; }
+    #header-home::before {
+      height: 8rem; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 8rem; }
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .certificates,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0; }
+  #about-a .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+  #about-c {
+    display: none; }
+  #about-d .certificates div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem; }
+    #about-d .certificates div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid; }
+    #contact-b div:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem; } }
+
+@media (max-height: 320px) {
+  #header-home .header-content h1 {
+    font-size: 2rem; } }

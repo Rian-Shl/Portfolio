@@ -20,11 +20,13 @@
         color: #f4f4f4;
         background-color: $main-color;
     }
+
     &-light {
         @extend %btn-shared;
         color: #333;
         background-color: $light-color;
     }
+
     &-dark {
         @extend %btn-shared;
         color: #f4f4f4;
@@ -34,7 +36,7 @@
 
 }
 
-button[class^='btn-']:hover, 
+button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
     background-color: $main-color;
@@ -47,14 +49,17 @@ input[class^='btn-']:hover {
         background: $main-color;
         color: set-text-color($main-color);
     }
+
     &-light {
         background: $light-color;
         color: set-text-color($light-color);
     }
+
     &-dark {
         background: $dark-color;
         color: set-text-color($dark-color);
     }
+
     &-medium {
         background: $medium-color;
         color: set-text-color($medium-color);
@@ -75,12 +80,15 @@ input[class^='btn-']:hover {
     &-1 {
         padding: 1rem 0;
     }
+
     &-2 {
         padding: 2rem 0;
     }
+
     &-3 {
         padding: 3rem 0;
     }
+
     &-4 {
         padding: 4rem 0;
     }
@@ -91,12 +99,15 @@ input[class^='btn-']:hover {
     &-1 {
         margin: 1rem 0;
     }
+
     &-2 {
         margin: 2rem 0;
     }
+
     &-3 {
         margin: 3rem 0;
     }
+
     &-4 {
         margin: 4rem 0;
     }
@@ -119,3 +130,11 @@ input[class^='btn-']:hover {
     text-transform: uppercase;
 }
 
+.tab-title {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+}

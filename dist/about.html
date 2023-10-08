@@ -33,6 +33,7 @@
 
     <!-- Section A: Info -->
     <section id="about-a" class="text-center py-3">
+
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="bottom-line"></div>
@@ -78,9 +79,16 @@
     </section>
 
     <section id="about-timeline">
-        <ul>
-            <h2 class="section-title">Work Experience</h2>
-            <div class="bottom-line"></div>
+        <input type="radio" name="slider" id="education">
+        <input type="radio" name="slider" id="work-experience" checked>
+
+        <nav>
+            <label class="tab-title" for="education">Education</label>
+            <label class="tab-title" for="work-experience">Work Experience</label>
+            <div class="slider"></div>
+        </nav>
+
+        <ul class="work-experience">
             <li>
                 <div>
                     <h3><i class="fas fa-chevron-right"></i>
@@ -131,6 +139,35 @@
                         while learning it to improve the company's classes.</p>
                 </div>
             </li>
+        </ul>
+        <ul class="education">
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2022 - Master of Science in Industrial Asset Management
+                    </h3>
+                    <div>
+                        <a href="https://www.ect-telecoms.com/">University of Stavanger</a>
+                        <h5>Norway</h5>
+                    </div>
+                    <p>Thesis: Machine learning methods for evaluating VOI with Python. Adviser: Reidar B. Bratvold </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2020 - Bachelor of Science in Electrical Engineering
+                    </h3>
+                    <div>
+                        <a href="https://www.olavstoppen.no">Shahid Beheshti University</a>
+                        <h5>Iran</55>
+                    </div>
+                    <p>Thesis: Design and simulation of a switchable state feedback controller for an inverse pendulum
+                        using MATLAB.
+                        Adviser: Arash Sadeghzadeh</p>
+                </div>
+            </li>
+
         </ul>
     </section>
     <!--  Section B: Progress Bars -->

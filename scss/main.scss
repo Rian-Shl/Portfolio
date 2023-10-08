@@ -792,6 +792,10 @@ img {
 
         &-inner {
             height: 8rem;
+
+            &::before {
+                height: 8rem;
+            }
         }
     }
 
@@ -908,6 +912,8 @@ img {
             padding-top: 3rem;
         }
     }
+
+
 
     #about-timeline nav {
         width: unset;

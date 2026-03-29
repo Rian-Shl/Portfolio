@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Rian-Shl/Portfolio#readme",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "sass": "^1.98.0"
   }
 }

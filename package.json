@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "build": "sass scss/:dist/css/",
+    "watch": "sass --watch scss/:dist/css/"
   },
   "repository": {
     "type": "git",
